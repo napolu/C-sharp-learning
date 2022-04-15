@@ -68,7 +68,7 @@ else
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 
-
+*/
 Console.Write("Input integer number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int current;
@@ -82,7 +82,7 @@ if(num > 0)
         if(current % 2 == 0)
             Console.Write(current + " ");
        
-    current++;
+        current++;
     }
 } 
 
@@ -94,8 +94,7 @@ if(num < 0)
         if(current % 2 == 0)
             Console.Write(current + " ");
             
-    current++;
+        current++;
     }
 }
 
-*/
