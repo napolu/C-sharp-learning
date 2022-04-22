@@ -8,7 +8,7 @@
 23432 -> да
 
 
-void PalindromeCheck(int num)//12345
+void PalindromeCheck(int num)
 {
     if(num < 10000 || num >99999)
     Console.WriteLine("Incorrect number");
