@@ -6,6 +6,7 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */
+
 /*
 Console.Write("Input first integer number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
@@ -53,18 +54,18 @@ Console.WriteLine("Sum of cyphers is: " + sum);
 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 6, 1, 33 -> [6, 1, 33]
 */
+
 /*
-int[] CreateArray(int size)
+int[] CreateRandomArray(int size, int min, int max)
 {
     int[] array = new int[size];
     for (int i = 0; i < size; i++)
     {
-        Console.Write("Input " + i + " element: ");
-        array[i] = Convert.ToInt32(Console.ReadLine());
+        array[i] = new Random().Next(min, max+1); 
     }
-
     return array;
 }
+
 
 void ShowArray(int[] array)
 {
@@ -84,7 +85,7 @@ void ShowArray(int[] array)
     Console.Write("]");
 }
 
-int[] MyArray = CreateArray(8);
+int[] MyArray = CreateRandomArray(8, 0, 20);
 ShowArray(MyArray);
 
 */
