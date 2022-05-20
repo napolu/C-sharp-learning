@@ -44,7 +44,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 */
 
 /*
-int[,] CreateMatrix(int lines,int columns)
+int[,] CreateRandomMatrix(int lines,int columns)
 {
     int [,] matrix = new int[lines, columns];
     for (int i = 0; i < matrix.GetLength(0); i++)
@@ -76,13 +76,10 @@ void MatrixCheck( int[,] matrix, int linesX, int columnsX)
         }    
 }
 
-Console.Write("Input horizontal size of matrix: ");
-int m = Convert.ToInt32(Console.ReadLine());
+int m = new Random().Next(4,11);
+int n = new Random().Next(4,11);
 
-Console.Write("Input vertical size of matrix: ");
-int n = Convert.ToInt32(Console.ReadLine());
-
-int[,] myMatrix = CreateMatrix(m,n);
+int[,] myMatrix = CreateRandomMatrix(m,n);
 
 Console.WriteLine("Input the coordinates of the element:");
 Console.Write("Input x: ");
