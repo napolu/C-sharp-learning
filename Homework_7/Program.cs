@@ -124,12 +124,12 @@ void LinesAverage(int[,] matrix)
     
     for (int i = 0; i < matrix.GetLength(0); i++)
         {
-            int average = 0;
+            double average = 0;
             for (int j = 0; j < matrix.GetLength(1); j++)
             {
                 average += matrix[i,j];
             }
-            Console.WriteLine("Average of line " + i + " equals: " + average);
+            Console.WriteLine("Average of line " + i + " equals: " + average/matrix.GetLength(1));
         }
     
 }
