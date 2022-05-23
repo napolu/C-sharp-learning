@@ -10,10 +10,10 @@ m = 3, n = 4.
 */
 
 /*
-Console.Write("Input horizontal size of matrix: ");
+Console.Write("Input vertical size of matrix: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input vertical size of matrix: ");
+Console.Write("Input horizontal size of matrix: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 double[,] matrix = new double[m,n];
@@ -134,10 +134,10 @@ void LinesAverage(int[,] matrix)
     
 }
 
-Console.Write("Input horizontal size of matrix: ");
+Console.Write("Input vertical size of matrix: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Input vertical size of matrix: ");
+Console.Write("Input horizontal size of matrix: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 int[,] myMatrix = CreateMatrix(m,n);
